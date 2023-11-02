@@ -1,0 +1,33 @@
+Steps To Download ZooKeeper and Kafka:
+
+Note: If we download kafka automatically zookeeper will be downloded with kafka software 
+
+=> Actaully kafka is zip file, we need to down load and extract zip file
+
+URL To download Kafka Zip File:
+
+https://kafka.apache.org/downloads
+
+choose latest stable release and click on second link under Binary Downloads
+
+Binary downloads:
+Scala 2.12  - kafka_2.12-3.6.0.tgz (asc, sha512)
+Scala 2.13  - kafka_2.13-3.6.0.tgz (asc, sha512)
+
+=>Then After Downloading kafka zip file and  unzip i.e extract it and keep Extract  or unzipped file in "C" drive 
+     And change the name of Extract  file to "kafka"
+=> Open kafka extract file and navigae to kafka/config/server and change  ""log.dirs=temp/kafka-logs to log.dirs=c:/kafkakafka-logs""
+=> Like that above keep change for kafka/config/zookeeper and change "dataDir=temp/zookeeper-data to dataDir=c:/kafka/zookeeper-data" now kafka logs and data will be stored into kafka logg and zookeeper data
+=>First we need to run  the zookeeper and then we have start and run kafka 
+Zookeepeer:
+=>Then open cmd from where our kafka extracted file there "c:/kafka" and  Provide zookeeper server and zookeeper config prperties like below in cmd 
+      "c:\kafka>.bin\windows\zookeeper-server-start .\config\zookeeper.properties" (Then enter)
+Note: Now Our Zookeeper will runs on port number :2181
+
+Kafka:
+"c:\kafka>.bin\windows\kafka-server-start.bat .\config\server.properties"(Then Enter)
+Note: Now Kafka also running..
+
+
+  
+
