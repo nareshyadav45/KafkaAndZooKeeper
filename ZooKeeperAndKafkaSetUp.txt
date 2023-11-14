@@ -28,7 +28,7 @@ Kafka:
 "c:\kafka>.bin\windows\kafka-server-start.bat .\config\server.properties"(Then Enter)
 Note: Now Kafka also running..
 
-
+#Open Separate Command Prompt after zookeeper and kafka server running on separate cmds then open separate prompt and type bellow commands to create topics and list number of topics which we created 
 
 Topic Create Command:
 C:\kafka>.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic TestTopicMine
